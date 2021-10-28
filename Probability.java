@@ -3,14 +3,14 @@ public class Probability{
     private double highCardPrb = 38.46;
     private double ntrlCardPrb = 23.07;
     private double lowCardPrb = 38.46;
-    private int[] highCards = new int[161];
-    private int[] lowCards = new int[161];
-    private int[] neutralCards = new int[97];
-    private int[] totalCards = new int[417];
-    private int hcIndex = 160;
-    private int lcIndex = 160;
-    private int ncIndex = 96;
-    private int tcIndex = 416;
+    private int[] highCards = new int[160];
+    private int[] lowCards = new int[160];
+    private int[] neutralCards = new int[96];
+    private int[] totalCards = new int[416];
+    private int hcIndex = 159;
+    private int lcIndex = 159;
+    private int ncIndex = 95;
+    private int tcIndex = 415;
     
     public Probability(){
         for (int i = 0; i < highCards.length; i++){
@@ -75,9 +75,9 @@ public class Probability{
     
     public String toString(){
         return "Next card chances ("+tcIndex+"/416)\n"+
-               "[2 to 6]: "+String.format("%.2f",highCardPrb)+"%"+"  ("+hcIndex+"/160)"+"  "+
-               "[7 to 9]: "+String.format("%.2f",ntrlCardPrb)+"%"+"  ("+ncIndex+"/96)"+"  "+
-               "[10s, aces]: "+String.format("%.2f",lowCardPrb)+"%"+"  ("+lcIndex+"/160)";
+               "[2 to 6]: "+String.format("%.2f",highCardPrb)+"%"+"  ("+(hcIndex+1)+"/160)"+"  "+
+               "[7 to 9]: "+String.format("%.2f",ntrlCardPrb)+"%"+"  ("+(ncIndex+1)+"/96)"+"  "+
+               "[10s, aces]: "+String.format("%.2f",lowCardPrb)+"%"+"  ("+(lcIndex+1)+"/160)";
     }
     
 }

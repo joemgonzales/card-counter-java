@@ -9,3 +9,6 @@ This program uses the classic "High-Low" counting method:
 
 The program assumes that the dealer's shoe is using 8 decks. Probability is determined by dividing
 the total cards of each tier by the total cards in the deck.
+
+When the program ends, it provides a final report of the number of cards from each tier
+that were dealt, the total cards pulled, and the average value of the count.

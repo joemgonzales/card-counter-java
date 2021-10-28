@@ -1,5 +1,5 @@
 # card-counter
-Program I thought of while learning Java in university, playing blackjack online to kill some time.
+Program I thought of while learning Java, playing blackjack online to kill some time.
 
 This program uses the classic "High-Low" counting method:
  - Keep a running count starting at 0
